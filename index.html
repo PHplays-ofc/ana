@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gosotsa da porra</title>
+<style>
+:root{
+  --roxo:#8a2be2;
+  --roxo-claro:#b36bff;
+  --preto:#000;
+  --cinza:#111;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+
+body{
+  background:var(--preto);
+  color:#fff;
+}
+
+header{
+  text-align:center;
+  padding:3rem 1rem;
+  background:linear-gradient(180deg,#000,#12001a);
+}
+
+header h1{
+  color:var(--roxo-claro);
+  text-shadow:0 0 15px rgba(138,43,226,.6);
+}
+
+header p{
+  opacity:.8;
+  margin-top:1rem;
+}
+
+.container{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:2rem 1rem;
+}
+
+.section{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:2rem;
+  margin:3rem 0;
+}
+
+.text-box{
+  flex:1;
+}
+
+.text-box h2{
+  color:var(--roxo);
+  margin-bottom:1rem;
+}
+
+.text-box p{
+  line-height:1.6;
+  opacity:.85;
+}
+
+.photo-box{
+  flex:1;
+  background:linear-gradient(135deg,#1a0025,#000);
+  border:2px solid var(--roxo);
+  border-radius:15px;
+  min-height:280px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 25px rgba(138,43,226,.3);
+  transition:.3s;
+}
+
+.photo-box:hover{
+  transform:scale(1.03);
+  box-shadow:0 0 35px rgba(138,43,226,.6);
+}
+
+.photo-box span{
+  color:var(--roxo-claro);
+  opacity:.6;
+}
+img{
+    width: 250px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+  margin-top:3rem;
+}
+
+.card{
+  background:#0a0a0a;
+  border:1px solid var(--roxo);
+  border-radius:12px;
+  min-height:200px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--roxo-claro);
+  box-shadow:0 0 20px rgba(138,43,226,.2);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px) scale(1.02);
+  box-shadow:0 0 30px rgba(138,43,226,.5);
+}
+
+footer{
+  text-align:center;
+  padding:2rem 1rem;
+  border-top:1px solid var(--roxo);
+  color:#aaa;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+  .section{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
+@media(max-width:600px){
+  header h1{font-size:1.8rem;}
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bem vindo ao</h1>
+  <p>perfil da mais gostosa do universo</p>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <div class="text-box">
+      <h2>Ana Julia</h2>
+      <p>Mais conhecida como, amor da minha vida, não quer assumir seu amor por mim.</p>
+    </div>
+    <div class="photo-box">
+      <img src="img2.png" alt="">
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="photo-box">
+      <img src="img1.png" alt="">
+    </div>
+    <div class="text-box">
+      <h2>Linda pa Carai</h2>
+      <p>Enquanto ela fala eu apenas adimiro e fico babando a raba dessa mina, pqp, mina linda da porra.</p>
+    </div>
+  </div>
+
+  <h2 style="color:var(--roxo); text-align:center; margin-top:4rem;">Olha essa gata!</h2>
+
+  <div class="grid">
+    <div class="card"><img src="slide1.png" alt=""></div>
+    <div class="card"><img src="slide2.png" alt=""></div>
+    <div class="card"><img src="slide3.png" alt=""></div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Se a virem por ai, me avisem, to perdido no sorriso dela</p>
+</footer>
+
+</body>
+</html>
